@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JJAENT3.Vistas.Inicio"
+             >
+  
+        <StackLayout Padding="15">
+        <Label x:Name="welcomeLabel" FontSize="10" HorizontalOptions="CenterAndExpand" Margin="0,20,0,10"/>
+        <Label Text="Registro de Notas" FontSize="20" HorizontalOptions="Center" />
+
+            <Label Text="Estudiante" />
+            <Picker x:Name="pickerEstudiante" Title="Seleccione un estudiante" />
+
+            <Label Text="Nota Seguimiento 1" />
+            <Entry x:Name="txtSeguimiento1" Keyboard="Numeric" />
+
+            <Label Text="Examen 1" />
+            <Entry x:Name="txtExamen1" Keyboard="Numeric" />
+
+            <Label Text="Nota Seguimiento 2" />
+            <Entry x:Name="txtSeguimiento2" Keyboard="Numeric" />
+
+            <Label Text="Examen 2" />
+            <Entry x:Name="txtExamen2" Keyboard="Numeric" />
+
+            <Label Text="Fecha" />
+            <DatePicker x:Name="datePickerFecha" />
+
+            <Button Text="Calcular Notas" Clicked="OnCalcularNotasClicked" />
+
+        </StackLayout>
+
+    </ContentPage>
